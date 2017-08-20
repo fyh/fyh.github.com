@@ -1,3 +1,0 @@
-# fyh.github.com
-blog
-
