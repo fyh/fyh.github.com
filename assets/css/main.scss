@@ -218,7 +218,9 @@ blockquote {
 			font-size: 0.8em;
 			border-radius: 3px;
 			background: $color-grey;
+			white-space: pre;
 		}
+
 		.highlight {
 			margin: 10px;
 			margin-bottom: 15px;
