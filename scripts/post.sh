@@ -14,4 +14,4 @@ DATETIME=`date '+%Y-%m-%d %H:%M:%S'`
 FNAME="./_drafts/$DATE-$1.md"
 touch $FNAME
 
-echo "---\nlayout: post\ndate: $DATETIME +0800\ntitle: $1\nnocomments: false\n---\n\n" >> $FNAME
+echo -e '---\nlayout: post\ndate: '$DATETIME' +0800\ntitle: '$1'\nnocomments: false\n---\n\n' >> $FNAME
