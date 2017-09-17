@@ -16,12 +16,12 @@ nocomments: false
 - BeanFactory
 - BeanDefinition
 
-先看下三个目标类的类图：
+<!-- 先看下三个目标类的类图：
 <img alt="ApplicationContext" src="/assets/img/ApplicationContext.png" width="900" height="250"/>
 
 <img alt="AnnotationConfigApplicationContext" src="/assets/img/AnnotationConfigApplicationContext.png" width="900" height="300"/>
 
-<img alt="ClassPathXmlApplicationContext" src="/assets/img/ClassPathXmlApplicationContext.png" width="1000" height="400"/>
+<img alt="ClassPathXmlApplicationContext" src="/assets/img/ClassPathXmlApplicationContext.png" width="1000" height="400"/> -->
 
 # 1. AnnotationConfigApplicationContext
 
