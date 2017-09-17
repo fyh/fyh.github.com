@@ -218,6 +218,9 @@ blockquote {
 			font-size: 0.8em;
 			border-radius: 3px;
 			background: $color-grey;
+		}
+		
+		pre {
 			overflow-x: auto;
 			overflow-y: hidden;
 		}
