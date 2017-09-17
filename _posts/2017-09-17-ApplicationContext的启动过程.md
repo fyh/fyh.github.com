@@ -18,13 +18,13 @@ nocomments: false
 
 先看下三个目标类的类图：
 
-![ApplicationContext](/assets/img/ApplicationContext.png)
+![ApplicationContext](/assets/img/ApplicationContext.png =100x20)
 
-![AnnotationConfigApplicationContext](/assets/img/AnnotationConfigApplicationContext.png)
+![AnnotationConfigApplicationContext](/assets/img/AnnotationConfigApplicationContext.png =100x20)
 
-![ClassPathXmlApplicationContext](/assets/img/ClassPathXmlApplicationContext.png)
+![ClassPathXmlApplicationContext](/assets/img/ClassPathXmlApplicationContext.png =100x20)
 
-# AnnotationConfigApplicationContext
+# 1. AnnotationConfigApplicationContext
 
 来看下默认构造函数：
 ```java
@@ -41,7 +41,7 @@ public AnnotationConfigApplicationContext() {
 }
 ```
 
-## register(annotatedClasses)
+## 1.1 register(annotatedClasses)
 
 看下register做了什么事？
 ```java
@@ -104,6 +104,6 @@ public void registerBean(Class<?> annotatedClass, String name, Class<? extends A
 
 到这里基本没啥问题了，register负责注册配置类的beanDefiniton。在这个过程中，会根据配置细粒度地进行配置beanDefinition的条件注册，以及创建并注册代理类beanDefinition。
 
-## refresh()
+## 1.2 refresh()
 
 [tbd]
