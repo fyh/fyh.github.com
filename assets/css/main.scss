@@ -212,6 +212,16 @@ blockquote {
 				margin: auto;
 			}
 		}
+		
+		pre {
+			overflow-x: auto;
+			overflow-y: auto;
+		}
+
+		pre:hover,
+		pre:focus {
+			width: min-content;
+		}
 		code {
 			font-family: "Lucida Sans Typewriter";
 			padding: 3px;
@@ -219,12 +229,6 @@ blockquote {
 			border-radius: 3px;
 			background: $color-grey;
 		}
-		
-		pre {
-			overflow-x: auto;
-			overflow-y: hidden;
-		}
-
 		.highlight {
 			margin: 10px;
 			margin-bottom: 15px;
