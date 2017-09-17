@@ -17,12 +17,11 @@ nocomments: false
 - BeanDefinition
 
 先看下三个目标类的类图：
+<img alt="ApplicationContext" src="/assets/img/ApplicationContext.png" width="200" height="200"/>
 
-![ApplicationContext](/assets/img/ApplicationContext.png =250x)
+<img alt="AnnotationConfigApplicationContext" src="/assets/img/AnnotationConfigApplicationContext.png" width="200" height="200"/>
 
-![AnnotationConfigApplicationContext](/assets/img/AnnotationConfigApplicationContext.png =250x)
-
-![ClassPathXmlApplicationContext](/assets/img/ClassPathXmlApplicationContext.png =250x)
+<img alt="ClassPathXmlApplicationContext" src="/assets/img/ClassPathXmlApplicationContext.png" width="200" height="200"/>
 
 # 1. AnnotationConfigApplicationContext
 
