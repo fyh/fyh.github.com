@@ -18,11 +18,11 @@ nocomments: false
 
 先看下三个目标类的类图：
 
-![ApplicationContext](/assets/img/ApplicationContext.png =100x20)
+![ApplicationContext](/assets/img/ApplicationContext.png =250x)
 
-![AnnotationConfigApplicationContext](/assets/img/AnnotationConfigApplicationContext.png =100x20)
+![AnnotationConfigApplicationContext](/assets/img/AnnotationConfigApplicationContext.png =250x)
 
-![ClassPathXmlApplicationContext](/assets/img/ClassPathXmlApplicationContext.png =100x20)
+![ClassPathXmlApplicationContext](/assets/img/ClassPathXmlApplicationContext.png =250x)
 
 # 1. AnnotationConfigApplicationContext
 
