@@ -1,7 +1,7 @@
 ---
 layout: post
 date: 2017-11-19 21:07:10 +0800
-title: [分享] linus talk on git
+title: linus talk on git
 nocomments: false
 ---
 
