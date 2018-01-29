@@ -5,6 +5,16 @@ title: kotlin koans
 nocomments: false
 ---
 
+# topics
+
+- 函数式
+- 泛型
+
+# koans
+
+- Comparable
+- ClosedRange
+
 # destructuring declarations
 
 解构声明
@@ -57,4 +67,108 @@ val olderJack = jack.copy(age = 2)
 
 # val 和 var
 
+val: read only
+
 val相当于java中的final，值在初始化时确定，之后不可变，var是可变的。
+
+# property
+
+# interface
+
+```kotlin
+interface MyInterface {
+	fun bar()
+	fun foo() {
+		// body
+	}
+}
+
+class Impl : MyInterface {
+	override fun bar() {
+		// body
+	}
+}
+```
+
+abstract property
+
+# accessor
+
+# properties
+
+`obj.prop` 访问的是 accessor
+
+自动类型推断：
+
+```kotlin
+val isEmpty get() = this.size == 0  // has type Boolean
+```
+
+set改成私有，或者依赖注入：
+```kotlin
+var setterVisibility: String = "abc"
+    private set // the setter is private and has the default implementation
+
+var setterWithAnnotation: Any? = null
+    @Inject set // annotate the setter with Inject
+```
+
+backing property:
+[Automatic vs Explicit Properties](https://blogs.msdn.microsoft.com/ericlippert/2009/01/14/automatic-vs-explicit-properties/)
+
+```kotlin
+private var _table: Map<String, Int>? = null
+public val table: Map<String, Int>
+    get() {
+        if (_table == null) {
+            _table = HashMap() // Type parameters are inferred
+        }
+        return _table ?: throw AssertionError("Set to null by another thread")
+    }
+```
+
+编译期常量：
+```kotlin
+const val SUBSYSTEM_DEPRECATED: String = "This subsystem is deprecated"
+
+@Deprecated(SUBSYSTEM_DEPRECATED) fun foo() { ... }
+```
+
+非空类型必须在构造函数中初始化。
+如果想要通过依赖注入或者去掉这个限制，可以指定为latinit。
+
+```kotlin
+public class MyTest {
+    lateinit var subject: TestSubject
+
+    @SetUp fun setup() {
+        subject = TestSubject()
+    }
+
+    @Test fun test() {
+        subject.method()  // dereference directly
+    }
+}
+```
+
+检查lateinit是否已经初始化了：`.isInitialized`
+
+覆盖父类的属性：`override`
+
+# Any Nothing Unit
+
+Unit是Any的子类，相当于java中的Void
+
+Nothing是没有类型，没有也不能实例化
+
+```kotlin
+fun fail(): Nothing {
+    throw RuntimeException("Something went wrong")
+}
+```
+
+# TODO
+```kotlin
+@kotlin.internal.InlineOnly
+public inline fun TODO(reason: String): Nothing = throw NotImplementedError("An operation is not implemented: $reason")
+```
