@@ -307,6 +307,7 @@ Found 1 deadlock.
 ```
 
 几个有用的链接，官方文档和实际案例：
+
 [1]: [Thread Dump](https://docs.oracle.com/javase/7/docs/webnotes/tsg/TSG-VM/html/tooldescr.html#gbmpn)
 [2]: [怎样分析 JAVA 的 Thread Dumps][https://segmentfault.com/a/1190000000615690]
 [3]: [tomcat thread dump 分析][http://www.jiacheo.org/blog/279]
