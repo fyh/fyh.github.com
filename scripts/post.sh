@@ -1,4 +1,4 @@
-#!/bin/env sh
+#!/bin/bash
 if [ ! -d "./_drafts" ]; then
 	echo "_drafts/ not exist."
 	exit 1
@@ -11,7 +11,7 @@ fi
 
 DATE=`date +%Y-%m-%d`
 DATETIME=`date '+%Y-%m-%d %H:%M:%S'`
-FNAME="./_drafts/$DATE-$1.md"
-touch $FNAME
+FNAME="./_drafts/$DATE-"$1".md"
+touch "$FNAME"
 
-echo -e '---\nlayout: post\ndate: '$DATETIME' +0800\ntitle: '$1'\nnocomments: false\n---\n\n' >> $FNAME
+echo -e '---\nlayout: post\ndate: '$DATETIME' +0800\ntitle: '$1'\nnocomments: false\n---\n\n' >> "$FNAME"
